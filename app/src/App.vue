@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "regal-blue": "#243c5a",
-            },
-          },
-        },
-      };
-    </script>
-    <title>Sign up -- tail wind css</title>
-  </head>
-  <body class="bg-cyan-400 w-screen h-screen overflow-hidden">
+<template>
+  <div class="bg-cyan-400 w-screen h-screen overflow-hidden">
     <div
       class="container grid grid-cols-2 justify-center align-center bg-white w-9/12 h-4/5 mx-auto my-16 rounded-lg overflow-hidden"
     >
       <img
         class="w-full h-full bg-cyan-200 rounded-lg"
-        src="/Ikbal 4.png"
+        src="./assets/Ikbal 4.png"
         alt=""
       />
       <div>
@@ -35,12 +15,14 @@
         <div
           class="inline-grid grid-cols-3 place-content-center w-full justify-center mx-2"
         >
-          <span class="justify-self-end"><img src="/GitHub.png" alt="" /></span>
+          <span class="justify-self-end"
+            ><img src="./assets/Github.png" alt=""
+          /></span>
           <span class="justify-self-center"
-            ><img src="/Twitter.png" alt=""
+            ><img src="./assets/Twitter.png" alt=""
           /></span>
           <span class="justify-self-start"
-            ><img src="/Facebook.png" alt=""
+            ><img src="./assets/Facebook.png" alt=""
           /></span>
         </div>
         <p class="text-center text-sm font-light">Or sign in with your email</p>
@@ -90,5 +72,5 @@
         </form>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</template>
